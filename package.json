@@ -1,0 +1,17 @@
+{
+  "name": "electron-todo-app",
+  "version": "1.0.0",
+  "description": "A simple Electron.js Todo List app boilerplate.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^29.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.4"
+  }
+}

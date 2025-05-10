@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 90%;
+  max-width: 360px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 24px 16px 32px 16px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+#todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+#todo-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+#todo-form button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  cursor: pointer;
+}
+#todo-form button:hover {
+  background: #1565c0;
+}
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+#todo-list li {
+  background: #f0f4f8;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#todo-list li:hover {
+  background: #e3eaf2;
+}
+
+.striked {
+  position: relative;
+  text-decoration: line-through;
+  text-decoration-color: #ccc;
+  animation: strikeout 0.7s forwards, fadeout 0.3s 0.7s forwards;
+}
+
+@keyframes strikeout {
+  from {
+    text-decoration-color: transparent;
+  }
+  to {
+    text-decoration-color: #ccc;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
